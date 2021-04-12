@@ -17,14 +17,14 @@ export class AppComponent {
   video       :string       ='https://www.youtube.com/embed/WNxH3Qnx0LQ';
   activar     :boolean      =true;
   
-  valorpromesa=new Promise<string>((resolve,reject)=>{
-    setTimeout(()=>{
+  valorpromesa = new Promise< string >( ( resolve , reject ) => {
+    setTimeout( () => {
       resolve('LLego la data');
       //reject('error');
     },5500);
   });
 
-  heroe={
+  heroe = {
     nombre:   'logan',
     clave:    'wolverine',
     edad:      500,
@@ -34,8 +34,8 @@ export class AppComponent {
     }
   }
   
-  idiomaButton(idioma:string){
-    this.idioma=idioma;
+  idiomaButton( idioma : string ){
+    this.idioma = idioma;
   }
 
 }
